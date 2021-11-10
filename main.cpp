@@ -13,7 +13,7 @@ int main() {
     linked->addNodeLast(Mouse("000", "JYRTH", "Genius", 800));
 
     do{ cout<<"\n|------------------------------|";
-        cout << "\n| 1. Crear Mouse               | ";
+        cout << "\n| 1. Crear Mouse             | ";
         cout << "\n| 2. Buscar Mouse            | ";
         cout << "\n| 3. Mostrar Mouse            | ";
         cout<<  "\n| 4. Mostrar Mouse get object | ";
@@ -65,7 +65,7 @@ int main() {
 
                     case 4: {
                         string information;
-                        cout << "Ingrese el ISBN del libro referencia\n";
+                        cout << "Ingrese el ID del mouse referencia\n";
                         cin >> information;
 
                         Node<Mouse> *findMouse = linked->findNode(information);
@@ -101,7 +101,7 @@ int main() {
             case 4:
 
                 int index;
-                cout<<"Ingresa la posición del libro\n";
+                cout<<"Ingresa la posición del mouse\n";
                 cin>> index;
                 cout<<*linked->getObject(index);
                 break;
